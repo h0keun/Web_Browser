@@ -1,5 +1,7 @@
+```💡 FastCampus 강의 수강 및 정리```
+
 ### Web_Browser
-WebView를 다루면서 미쳐 신경쓰지 못한 디테일한 부분들을 check
+WebView를 다루면서 디테일한 부분들을 check
 
 + ConstraintLayout(constraintDimensionRatio)
 + URL 로딩(EditText : inputType textURI > Shape) + ContentLoadingProgressBar
@@ -28,6 +30,7 @@ private fun initViews() {
   }
 }
 ```
+<img src="https://user-images.githubusercontent.com/63087903/119834830-4403af80-bf3b-11eb-953b-0c8475d55324.jpg" width="200" height="430"> <img src="https://user-images.githubusercontent.com/63087903/119834838-45cd7300-bf3b-11eb-9bf6-4967ae4b226d.jpg" width="200" height="430">
 
 ## [2021-05-12]
 
