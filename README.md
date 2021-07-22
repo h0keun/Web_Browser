@@ -44,25 +44,25 @@ private fun initViews() {
 ```KOTLIN
 * 보안관련해서 https를 사용하여야 하지만 http또한 허용하도록 하기위해 속성 추가
 android:usesCleartextTraffic="true"
-``
+```
 ### layout.xml
 + 어떤 레이아웃에 이미지버튼을 추가하여 사용하고자 할 때 겪었던 문제  
-  : 이미지가 들어가있는 뷰의 영역 크기만큼 버튼클릭효과를 주고싶은데 뷰 안의 이미지부분만 클릭되고 다른 영역은 클릭이 안될 때 등 
-  - 위의 부분을 해결할 수 있는 디테일한 방법은 다음과 같다.(constratintlayout 기준)
-    ```KOTLIN
-    // 1. wrap_content나 match_parent 를 0dp로 바꾸어준다.
+  : 이미지가 들어가있는 뷰의 영역 크기만큼 버튼클릭효과를 주고싶은데  
+    뷰 안의 이미지부분만 클릭되고 다른 영역은 클릭이 안될 때 등 
+```KOTLIN
+// 1. wrap_content나 match_parent 를 0dp로 바꾸어준다.
   
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+   android:layout_width="0dp"
+   android:layout_height="0dp"
   
-    // 2. backgroundcolor를 아래와 같이 지정해주면 자연스레 ripple효과도 들어간다.
+// 2. backgroundcolor를 아래와 같이 지정해주면 자연스레 ripple효과도 들어간다.
   
-    android:background="?attr/selectableItemBackground"
-    android:src="@drawable/ic_home"
+   android:background="?attr/selectableItemBackground"
+   android:src="@drawable/ic_home"
   
-    // 3. 비율 조정
-    app:layout_constraintDimensionRatio="1:1" 
-    ```
+// 3. 비율 조정
+   app:layout_constraintDimensionRatio="1:1" 
+```
 + EditText 영역을 주소입력창으로 사용할 때
   : 키보드입력후 완료 를 누르면 그것을 이벤트처리하여 사이트 이동시키기(처리는 코틀린 클래스에서 마무리해야함)
   ```KOTLIN
